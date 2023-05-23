@@ -1,0 +1,58 @@
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Public Intrest Press</title>
+    <link
+      rel="stylesheet"
+      href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css"
+    />
+    <link rel="stylesheet" href="/public/css/style.css" />
+
+  </head>
+  <body>
+
+    <!-- Start Top Bar -->
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="menu">
+
+          <li class="menu-text">Public Intrest Press
+            <svg width="24" height="24" viewBox="0 0 24 24">
+              <path fill="red" d="M19.293 4.707a1 1 0 0 1 0 1.414l-4.586 4.586a2 2 0 0 0-1.415.586L7 16l-3 6 6-3 5.707-5.707a2 2 0 0 0 .586-1.415l4.586-4.586a1 1 0 0 1 1.414 0zm-2.828 2.828l-4.586 4.586-1.414-1.414 4.586-4.586 1.414 1.414zm1.414-1.414l-1.414-1.414a3 3 0 0 0-4.243 0l-1.414 1.414L16.96 9.32l1.414-1.414zm-8.485 8.485l-1.414-1.414 5.657-5.657 1.414 1.414-5.657 5.657z"/>
+
+              <path
+                d="M19.293 4.707a1 1 0 0 1 0 1.414l-4.586 4.586a2 2 0 0 0-1.415.586L7 16l-3 6 6-3 5.707-5.707a2 2 0 0 0 .586-1.415l4.586-4.586a1 1 0 0 1 1.414 0zm-2.828 2.828l-4.586 4.586-1.414-1.414 4.586-4.586 1.414 1.414zm1.414-1.414l-1.414-1.414a3 3 0 0 0-4.243 0l-1.414 1.414L16.96 9.32l1.414-1.414zm-8.485 8.485l-1.414-1.414 5.657-5.657 1.414 1.414-5.657 5.657z"
+              />
+            </svg>
+
+          </li>
+          {{#if logged_in}}
+            <li><a href="/" id="homepage">Home</a></li>
+            <li><a href="/tips" id="tips">Tips</a></li>
+            <li><a href="" id="logout">Logout</a></li>
+            <li><a href="/profile" id="profile">Profile</a></li>
+          {{else}}
+            <li><a href="/" id="homepage">Home</a></li>
+            <li><a href="/tips" id="tips">Tips</a></li>
+            <li><a href="/login" id="login">Login/Signup</a></li>
+          {{/if}}
+        </ul>
+      </div>
+    </div>
+    <!-- End Top Bar -->
+
+    <main>
+      {{{body}}}
+    </main>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script
+      src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"
+    ></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <script src="./js/logout.js"></script>
+  </body>
+</html>

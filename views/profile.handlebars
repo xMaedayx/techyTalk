@@ -1,0 +1,25 @@
+
+<div class="card-box">
+    <div class="card-section">
+       {{!-- <img class="card-img" src="https://placehold.it/350x300" alt="header" /> --}}
+      <div class="card-info">
+        <h1 class="name">{{name}}</h1>
+        {{!-- <div class="card-icon">{{name}}</div> --}}
+        <p class="card-header"></p>
+         {{!-- <p class="card-stats">6 <img src="https://placehold.it/20" alt="hi" /> 6 <img src="https://placehold.it/20" alt="hi" /></p> --}}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="text-center align-middle">
+  <div class="medium-8 large-7 columns row align-center card-section">
+    {{#each articles as |article| }}
+    <div class="card">
+      <a href="/article/{{article.id}}">{{article.title}}</a>
+      <p>{{content}}</p>
+    </div>
+    {{/each}}
+  </div>
+</div>
+</div>

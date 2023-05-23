@@ -1,0 +1,45 @@
+{{#if logged_in}}
+<div class="card-container position-absolute top-100 left-100 w-10 h-10">
+<button class="button" data-open="myModal1">Create Post</button>
+<div class="reveal" id="myModal1" data-reveal>
+  <h1> Your New Post</h1>
+  <form id="new-article-form">
+    <input type="hidden" id="user_id" value="<%= user_id %>">
+  <div class="grid-x grid-padding-x">
+    {{!-- <div class="small-3 cell">
+      <label for="title" class="text-right middle"></label>
+    </div> --}}
+    <div class="small-9 cell">
+      <input type="form-input" id="article-title" placeholder="Title" required>
+    </div>
+  </div>
+
+  <label>
+  Enter here:
+  <textarea type="form-input" id="article-content" placeholder="None" required></textarea>
+  <label for="fileUpload" class="button">Upload File</label>
+  <input type="file" id="fileUpload" class="show-for-sr">
+  </label>
+
+  <button id="submit" class="submit success button">Submit</button>
+</form>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+  <script src="/js/postBtn.js"></script>
+  <script src="/js/newArticle.js"></script>
+{{!-- <a href="/newarticle" class="button">Create Post</a> --}}
+
+{{/if}}
+<div class="text-center">
+  {{#each articles as |article|}}
+    <div class="medium-12 columns text-center">
+      <a href="/article/{{article.id}}">{{article.title}}</a>
+      <p>{{article.content}}</p>
+    </div>
+  {{/each}}
+</div>
+
+
+  <script src="/public/js/postBtn.js"></script>
