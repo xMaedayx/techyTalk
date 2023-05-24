@@ -7,6 +7,17 @@
       <ul class="menu simple">
         <li><a href="#">Author: {{user.name}}</a></li>
       </ul>
+     <h4>Comments</h4>
+      {{#each comments}}
+        <div class="comment">
+          <p>{{this}}</p>
+        </div>
+      {{/each}}
+
+      <form>
+        <textarea name="comment" placeholder="Write a comment..."></textarea>
+        <button type="submit">Submit</button>
+      </form>
     </div>
   </div>
 </div>

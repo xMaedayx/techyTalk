@@ -1,8 +1,8 @@
 const sequelize = require('../config/connection');
-const { User, Article, Tips } = require('../models');
+const { User, Article, Comments} = require('../models');
 const userData = require ("./userData.json");
-const tipsData = require("./tipsData.json");
 const articleData = require("./articleData.json");
+const commentData = require("./commentData.json");
 
 
 
@@ -28,19 +28,15 @@ const seedDatabase = async () =>  {
         });
       }
 
-    // await Tips.bulkCreate(tipsData, {
-    //     individualHooks: true, 
-    //     returning: true, 
-
-
-    // });
-
-    for (const tips of tipsData) {
-        await Tips.create({
-          ...tips,
-          user_id: users[Math.floor(Math.random() * users.length)].id,
+      for (const comments of commentData) {
+        await Comment.create({
+            ...comments,
+            user_id: users[Math.floor(Math.random() * users.length)].id,
         });
-      }
+
+
+
+   
 
 process.exit(0);
 };

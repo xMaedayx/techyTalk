@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Article, Tips, User } = require('../models');
+const { Article, Comments, User } = require('../models');
 const withAuth = require('../utils/auth.js');
 
 router.get('/', async (req, res) => {
@@ -27,9 +27,9 @@ router.get('/', async (req, res) => {
 });
 
 
-router.get('/tips', async (req, res) => {
+router.get('/comments', async (req, res) => {
   try {
-    const tipsData = await Tips.findAll({
+    const commentData = await Comments.findAll({
       include: [
         {
           model: User,
@@ -37,10 +37,10 @@ router.get('/tips', async (req, res) => {
         }
       ]
     })
-    const tips = tipsData.map((tip) => tip.get({ plain: true }));
+    const comments = commentData.map((comments) => comments.get({ plain: true }));
 
-    res.render('tips', {
-      tips,
+    res.render('comments', {
+      comments,
       logged_in: req.session.logged_in 
     });
   } catch (err) {
@@ -52,16 +52,16 @@ router.get('/tips', async (req, res) => {
 });
 
 
-router.get('/newtip', async (req, res) => {
+router.get('/newcomment', async (req, res) => {
   try {
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
-      include: [{ model: Tips }],
+      include: [{ model: Comments }],
     });
 
     const user = userData.get({ plain: true });
 
-    res.render('newtip', {
+    res.render('newcomment', {
       ...user,
       logged_in: req.session.logged_in 
     });
@@ -117,9 +117,9 @@ router.get('/article/:id', async (req, res) => {
   }
 });
 
-router.get('/tips/:id', async (req, res) => {
+router.get('/comments/:id', async (req, res) => {
   try {
-    const tipsData = await Tips.findByPk(req.params.id, {
+    const commentData = await Comments.findByPk(req.params.id, {
       include: [
         {
           model: User,
@@ -128,10 +128,10 @@ router.get('/tips/:id', async (req, res) => {
       ],
     });
 
-    const tip = tipsData.get({ plain: true });
+    const comments = commentData.get({ plain: true });
 
-    res.render('tip', {
-      ...tip,
+    res.render('comments', {
+      ...comments,
       logged_in: req.session.logged_in
     });
   } catch (err) {

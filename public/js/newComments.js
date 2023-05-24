@@ -5,15 +5,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const newFormHandler = async (event) => {
         event.preventDefault();
       
-        
-        const title = document.querySelector('#tips-title').value.trim();
-        const content = document.querySelector('#tips-content').value.trim();
+     
+        const content = document.querySelector('#comment-content').value.trim();
         const user_id = document.querySelector('#user_id').value.trim();
       
-        if (title && content) {
-          const response = await fetch(`/api/tips`, {
+        if (content && user_id) {
+          const response = await fetch(`/api/comments`, {
             method: 'POST',
-            body: JSON.stringify({ title, content, user_id }),
+            body: JSON.stringify({ content, user_id }),
             headers: {
               'Content-Type': 'application/json',
             },
@@ -22,15 +21,15 @@ document.addEventListener('DOMContentLoaded', () => {
           console.log(response);
     
           if (response.ok) {
-            document.location.replace('/tips');
+            document.location.replace('/comments');
           } else {
-            alert('Failed to create tip');
+            alert('Failed to create comment');
           }
         }
       };
     
       document
-      .querySelector('#new-tip-form')
+      .querySelector('#new-comment-form')
       .addEventListener('submit', newFormHandler);
     
     });

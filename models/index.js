@@ -1,7 +1,7 @@
 const { Sequelize } = require('sequelize');
 const User = require('./User');
 const Article = require('./Article');
-const Tips = require('./Tips');
+const Comments = require('./Comments');
 
 User.hasMany(Article, {
     foreignKey: "user_id",
@@ -19,7 +19,12 @@ Article.belongsTo(User, {
 
 });
 
-Tips.belongsTo(User, {
+Article.hasMany(Comments, {
+    foreignKey: "article_id",
+    onDelete: "CASCADE"
+});
+
+Comments.belongsTo(User, {
     foreignKey: "user_id"
 
 });
@@ -35,7 +40,7 @@ Tips.belongsTo(User, {
 module.exports = { 
     User, 
     Article, 
-    Tips,
+    Comments,
  };
 
 // user and articles destructuring (refer index.js in mini28)

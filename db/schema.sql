@@ -1,2 +1,2 @@
-DROP DATABASE IF EXISTS publicinterestpress_db;
-CREATE DATABASE publicinterestpress_db;
+DROP DATABASE IF EXISTS techytalk_db;
+CREATE DATABASE techytalk_db;
