@@ -8,7 +8,7 @@ User.hasMany(Article, {
     onDelete: "CASCADE"
 });
 
-User.hasMany(Tips, {
+User.hasMany(Comments, {
    foreignKey: "user_id",
    onDelete: "CASCADE"
  

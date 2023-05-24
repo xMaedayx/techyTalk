@@ -33,16 +33,16 @@
   </button>
 </div>
   <script src="/js/postBtn.js"></script>
-  <script src="/js/newTips.js"></script>
+  <script src="/js/newComments.js"></script>
 
 
 {{/if}}
 
 <div class="text-center">
-  {{#each tips as |tips|}}
+  {{#each comments as |comments|}}
     <div class="medium-12 columns text-center">
-      <a href="/tips/{{tips.id}}">{{tips.title}}</a>
-      <p>{{tips.content}}</p>
+      <a href="/comments/{{comments.id}}">{{comments.title}}</a>
+      <p>{{comments.content}}</p>
     </div>
   {{/each}}
 </div>
