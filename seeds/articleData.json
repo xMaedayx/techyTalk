@@ -1,37 +1,37 @@
 [
     {
-        "title": "Penguins: The Waddling Wonders of the Animal Kingdom",
-        "content": "Penguins are some of the most beloved animals in the world. These flightless birds are famous for their distinctive black and white plumage, their waddling walk, and their adorable personalities. But there's more to these aquatic creatures than meets the eye. Here are some fascinating facts about penguins that you may not know. There are 18 species of penguins. While most people are familiar with the Emperor Penguin, the largest of all penguin species, there are actually 18 different species of penguins. They range in size from the tiny Little Blue Penguin, which stands just 16 inches tall, to the Emperor Penguin, which can reach up to 4 feet in height. Each species has its own unique characteristics and behaviors.Penguins are excellent swimmers.Penguins may not be able to fly, but they are excellent swimmers. Their streamlined bodies, waterproof feathers, and strong flippers allow them to glide effortlessly through the water. In fact, penguins are some of the fastest swimming birds in the world, with some species reaching speeds of up to 22 miles per hour.Penguins have special adaptations to survive in cold environments.",
+        "title": "MySQL",
+        "content": "Since MySQL 8.0.30, the Dynamic InnoDB Redo Log is a new feature that allows users to resize the redo log files on the fly without the need for a restart. This is a significant improvement over previous versions of MySQL, where the redo log files had to be manually resized and the database had to be restarted in order for the changes to take effect. An undersized Redo Log Capacity is problematic and lead to performance issues.",
         "user_id": "1"
     },
     {
-        "title": "Chlorophyll",
-        "content": "Chlorophyll: The Molecule that Powers Life  Chlorophyll is one of the most important molecules on Earth. It's the molecule that makes life possible by converting sunlight into energy through the process of photosynthesis. Without chlorophyll, plants would not be able to produce the food they need to survive, and life as we know it would cease to exist. Here's what you need to know about this remarkable molecule.  What is Chlorophyll?  Chlorophyll is a green pigment found in the chloroplasts of plant cells. It's responsible for capturing light energy from the sun and converting it into chemical energy that can be used by the plant. Chlorophyll is made up of a complex organic molecule called a porphyrin ring, which is surrounded by a long hydrocarbon tail.  How Does Chlorophyll Work?  Chlorophyll works by absorbing light energy from the sun and using it to power the process of photosynthesis. ",
+        "title": "GraphQL",
+        "content": "We are very happy to announce the official home for contributed GraphQL custom scalar specifications at scalars.graphql.org. You are welcome to contribute custom scalar specifications (abbreviated as "specs"). Once your spec is merged in, it will be hosted at scalars.graphql.org/<GitHub-username>/<specification-name>. See how to contribute on the contribution guide. ",
         "user_id": "2"
     },
     {
-        "title": "KSI: YouTuber visits mosque after racial slur in Sidemen video.",
-        "content": "KSI has visited a mosque and spoke to an Imam, days after he used a racial slur in a YouTube video. In the now-deleted clip with his group The Sidemen, he created a four-letter derogatory word for people of South Asian origin during a Countdown game. KSI also used a boxing preview event on Wednesday to apologise for causing hurt and disappointment. The rapper said he'd engaged in very early conversations with some people from South Asian communities. KSI didn't give any more details but on Tuesday he was seen at the Al-Hikam Institute in Bradford.",
+        "title": "Node",
+        "content": "Async/await in Node.js opens up a host of powerful design patterns. Tasks that used to take complex libraries or intricate promise chaining can now be done with rudimentary if statements and for loops. I already wrote about these kind of design patterns with co, but async/await makes these patterns accessible in vanilla Node.js, no outside libraries required.",
         "user_id": "3"    
     },
     {
-        "title": "Royal Mail pay talks with union collapse.",
-        "content": "Talks to resolve a long-running row between Royal Mail and staff members over pay and conditions have collapsed.Royal Mail says it is deeply concerned discussions concluded without agreement and claimed it made substantial efforts to reach a deal. The Communication Workers Union said it was willing to continue negotiations. Royal Mail said it remained committed to reaching an agreement with the CWU and said not transforming the company was not an option.",
+        "title": "MongoDB",
+        "content": "Introducing MongoDB Atlas Connector for Power BI, the certified solution that facilitates real-time insights on your Atlas data directly in the Power BI interfaces that analysts know and love! Supporting Microsoft’s Intelligent Data Platform, this integration bridges the gap between Developers and Analytics teams, allowing analysts who rely on Power BI for insights to natively transform, analyze, and share dashboards that incorporate live MongoDB Atlas data.",
         "user_id": "4"    
     },
     {
-        "title": "Banksy mural in Lowestoft removed from wall of house.",
-        "content": "A mural painted by Banksy on the side of a house has been removed, prompting fears it has been sold. The seagull mural appeared on a house in Lowestoft, Suffolk, in August 2021. In February, scaffolding and covers appeared at the wall, but the town's mayor Alan Green said he had been reassured it was not being removed. On Tuesday night a large crane appeared to lift the mural away from the house on the corner of Denmark Road and Katwijk Way, with police also present.The mural was one of three painted in Lowestoft as part of Banksy's Great British Spraycation collection across Norfolk and Suffolk. ",
+        "title": "Express JS",
+        "content": "Express provides a built-in middleware express.static to serve static files, such as images, CSS, JavaScript, etc. You simply need to pass the name of the directory where you keep your static assets, to the express.static middleware to start serving the files directly. For example, if you keep your images, CSS, and JavaScript files in a directory named public, you can do this − ",
         "user_id": "5"    
     },
     {
-        "title": "Climate change: World's top court to weigh in.",
-        "content": "The world's top court will for the first time advise on countries' legal obligations to fight climate change, following a UN resolution on Wednesday. The International Court of Justice will now prepare an advisory opinion that could be cited in climate court cases. The motion came from Vanuatu, a low-lying Pacific island nation facing peril from rising sea levels. Vanuatu's Prime Minister Ishmael Kalsakau called it a win for climate justice of epic proportions.",
+        "title": "React",
+        "content": "Suspense lets you specify what to display on the screen while the data or code for your components is still being loaded. This lets your users progressively see more content while the page is loading as well as during the router navigations that load more data and code. However, from the user’s perspective, data loading and rendering do not tell the whole story when considering whether new content is ready. By default, browsers load stylesheets, fonts, and images independently, which can lead to UI jumps and consecutive layout shifts.",
         "user_id": "1"     
     },
     {
-        "title": "Swiss court case ties human rights to climate change.",
-        "content": "More than 2,000 women are taking the Swiss government to court claiming its policy on climate change is violating their right to life and health. The case is the first time the European Court of Human Rights (ECHR) will hear a case on the impact of climate change on human rights. It follows six years of unsuccessful battles through the Swiss courts. Temperatures in Switzerland are rising faster than the global average and there are ever more frequent heatwaves. The Swiss women - who call themselves the Club of Climate Seniors and have an average age of 73 - say climate change is putting their human rights, their health and even their lives at risk. Their evidence to the court includes their medical records. They want the ECHR to order Switzerland to work harder at reducing greenhouse gas emissions. One of the campaigners, Elisabeth Stern, told the BBC: Due to climate change, we have more heatwaves and older women suffer more. They die more often during these heatwaves than they otherwise would. Some people say, why are you complaining, you're going to die anyway. But we don't want to die just because our Swiss government has not been successful in coming up with a decent climate policy. The European Climate and Health Observatory says that projected increases in average temperature are likely to have serious impacts on public health across Europe, particularly among elderly people.",
+        "title": "Angular",
+        "content": "Duration and delay are expressed as a number and optional time unit, such as "1s" or "10ms" for one second and 10 milliseconds, respectively. The default unit is milliseconds.",
         "user_id": "2"     
     }
   ]
