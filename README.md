@@ -40,4 +40,7 @@ WHEN I click on the logout option in the navigation
 THEN I am signed out of the site
 WHEN I am idle on the site for more than a set time
 THEN I am able to view comments but I am prompted to log in again before I can add, update, or delete comments
+<img width="1278" alt="Screenshot 2023-05-24 at 9 08 26 PM" src="https://github.com/xMaedayx/techyTalk/assets/120540407/2d20e40b-a95e-4a58-83b1-a79ccc2d6c69">
+
+
 
